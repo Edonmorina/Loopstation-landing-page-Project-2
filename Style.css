@@ -1,0 +1,480 @@
+:root {
+  --darkGray: hsl(0, 0%, 55%);
+  --veryDarkGray: hsl(0, 0%, 41%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alata", sans-serif, "Josefin Sans", sans-serif;
+  font-size: 15px;
+}
+
+header {
+  background-image: url(./images/desktop/image-hero.jpg);
+  height: 85vh;
+  background-size: cover;
+}
+
+a {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  padding: 60px;
+}
+
+#logo {
+  margin-right: auto;
+  margin-left: 10%;
+}
+
+.container1 {
+  list-style-type: none;
+  margin-right: 5%;
+}
+.container1 li {
+  display: inline-block;
+}
+
+.container1 li a {
+  color: white;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  margin: 0px 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.container1 li a::selection {
+  background-color: purple;
+}
+
+#logo::selection {
+  background-color: purple;
+}
+.head-box {
+  display: inline-block;
+  border: 2.5px solid white;
+  color: white;
+  margin-left: 12.8%;
+  padding: 40px;
+  font-size: 3rem;
+  margin-top: 7%;
+  padding-right: 8rem;
+}
+
+.head-box h1 {
+  font-weight: 200;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.head-box h1::selection {
+  background-color: purple;
+}
+
+main {
+  margin-top: 15vh;
+  margin-left: 12.5%;
+  margin-bottom: 15vh;
+}
+
+.goggles {
+  position: relative;
+  width: 945px;
+  left: 0.5%;
+}
+
+.main-box {
+  position: absolute;
+  display: inline-block;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 12.5%;
+  bottom: -46.5rem;
+  background-color: white;
+  right: 5rem;
+}
+
+.main-box h1 {
+  font-size: 400%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;
+}
+
+.main-box h1:nth-child(2) {
+  margin-bottom: 10%;
+}
+
+.main-box p:nth-child(3),
+p:nth-child(4),
+p:nth-child(5) {
+  margin-bottom: 1%;
+}
+
+.main-box p {
+  color: var(--darkGray);
+}
+
+.creations {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+
+.creations h1 {
+  margin-right: auto;
+  margin-left: 12.8%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.creations a {
+  display: inline-block;
+  margin-right: 9.5%;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px 60px;
+  text-decoration: none;
+  font-family: "Alata", sans-serif;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  transition: 0.75s ease;
+}
+
+.creations a:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.fpartone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.fpartone img {
+  margin-right: auto;
+  margin-left: 12.5%;
+}
+#icons {
+  margin-right: 9%;
+  letter-spacing: 0.5rem;
+}
+
+i {
+  color: white;
+  font-size: 2rem;
+}
+
+.fparttwo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.footer-nav {
+  margin-right: auto;
+  margin-left: 11.25%;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+.footer-nav li a {
+  color: white;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  margin: 0px 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.fparttwo h3 {
+  font-family: "Alata", sans-serif;
+  color: var(--veryDarkGray);
+  margin-right: 9%;
+  font-size: 1.15rem;
+}
+
+.attribution {
+  background-color: black;
+  font-family: "Alata", sans-serif;
+  font-size: 0.5rem;
+  color: white;
+}
+
+/*Footer Underline Animation*/
+
+.container1 li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.container1 li a:hover {
+  color: white;
+}
+
+.container1 li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.container1 li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.footer-nav li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav li a:hover {
+  color: white;
+}
+
+.footer-nav li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer-nav li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/*Grid Image Animation*/
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  width: 90rem;
+}
+
+section .card {
+  position: relative;
+  width: 17rem;
+  height: 30rem;
+  margin: 1.5rem;
+  transform-style: preserve-3d;
+  perspective: 1100px;
+}
+
+section .card .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+}
+
+section .card:hover .box {
+  transform: rotateY(180deg);
+}
+
+section .card .box .imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section .card .box .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .card .box .contentBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  background: rgba(255, 255, 255, 0.25);
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+section .card .box .contentBx div {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background: linear-gradient(25deg, #141e30, #243b55);
+  box-shadow: rgb(38, 57, 77) 0px 15px 15px -10px;
+  transform: translateZ(100px);
+}
+
+section .card .box .contentBx div h2 {
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+section .card .box .contentBx div p {
+  color: white;
+  font-size: 16px;
+}
+
+section .card .box .contentBx div a {
+  color: white;
+  font-family: "Alata", sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+section .card .box .contentBx div a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+section .card .box .contentBx div a:hover {
+  color: white;
+}
+
+section .card .box .contentBx div a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+section .card .box .contentBx div a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+section .card .box .contentBx div a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+section .card .box .contentBx div a:hover {
+  color: white;
+}
+
+section .card .box .contentBx div a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+section .card .box .contentBx div a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+section .card .box .contentBx h2::selection {
+  background: #243b55;
+}
+
+section .card .box .contentBx a::selection {
+  background: #243b55;
+}
+
+#icons a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+#icons a:hover {
+  color: white;
+}
+
+#icons a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#icons a:hover::before {
+  visibility: visible;
+  transform: scaleX(0.9);
+}
