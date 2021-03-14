@@ -486,7 +486,8 @@ input,
 .card-container-m,
 .h1m,.head-box,
 .cardContainer-m,
-.creations-m{
+.creations-m,
+.footer-m{
   display: none;
 }
 
@@ -495,6 +496,10 @@ input,
 
 @media only screen and (max-width: 480px) {
   nav ul {
+    display: none;
+  }
+
+  .footer-d{
     display: none;
   }
 
@@ -536,12 +541,8 @@ input,
   }
 
   
-
   nav {
     padding-left: 5%;
-    display: flex;
-  
-    
   }
   .goggles{
     display: none;
@@ -701,3 +702,76 @@ input,
     text-decoration: none;
 }
 
+.footer-nav {
+  margin-right: auto;
+  margin-left: 11.25%;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+.footer-nav li a {
+  color: white;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  margin: 0px 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.fparttwo h3 {
+  font-family: "Alata", sans-serif;
+  color: var(--veryDarkGray);
+  margin-right: 9%;
+  font-size: 1.15rem;
+}
+
+
+.footer-m{
+  display: block;
+  text-align: center;
+}
+
+.footer-m h3{
+  color: white;
+}
+
+.footer-m img {
+  margin-top: 15%;
+}
+
+.footer-nav-m li{
+  margin-bottom: 5%;
+}
+
+.footer-nav-m a{
+  color: white;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.footer-nav-m{
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+#icons-m{
+  margin: 0 auto;
+}
+
+#icons-m i {
+  font-size: 2rem;
+  padding: 2.5%;
+}
+
+.footer-m h3{
+  font-family: "Alata", sans-serif;
+  color: var(--veryDarkGray);
+  margin-top: 3.5%;
+  margin-bottom: 15%;
+  font-size: 1.25rem;
+}
