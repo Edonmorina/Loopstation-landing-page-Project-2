@@ -16,6 +16,8 @@ body {
 
 header {
   background-image: url(./images/desktop/image-hero.jpg);
+  background-size: 100%;
+  width: 100%;
   height: 85vh;
   background-size: cover;
 }
@@ -29,10 +31,11 @@ nav {
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  padding: 60px;
+  padding: 4rem;
 }
 
 #logo {
+  z-index: 2;
   margin-right: auto;
   margin-left: 10%;
 }
@@ -90,7 +93,7 @@ main {
 
 .goggles {
   position: relative;
-  width: 945px;
+  width: 59rem;
   left: 0.5%;
 }
 
@@ -146,7 +149,7 @@ p:nth-child(5) {
   border: 1px solid black;
   background-color: white;
   color: black;
-  padding: 10px 60px;
+  padding: 0.625rem 3.75rem;
   text-decoration: none;
   font-family: "Alata", sans-serif;
   letter-spacing: 2px;
@@ -487,7 +490,8 @@ input,
 .h1m,.head-box,
 .cardContainer-m,
 .creations-m,
-.footer-m{
+.footer-m,
+.container2{
   display: none;
 }
 
@@ -499,6 +503,11 @@ input,
     display: none;
   }
 
+  .container1,.container1 li a{
+    display: none;
+
+  }
+
   .footer-d{
     display: none;
   }
@@ -508,7 +517,7 @@ input,
   }
 
   nav label {
-    display: inline-flex;
+    display: block;
     font-size: 2rem;
     color: white;
   }
@@ -542,7 +551,8 @@ input,
 
   
   nav {
-    padding-left: 5%;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
   }
   .goggles{
     display: none;
@@ -774,4 +784,85 @@ input,
   margin-top: 3.5%;
   margin-bottom: 15%;
   font-size: 1.25rem;
+}
+
+.container2{
+  display: flex;
+  list-style-type: none;
+  width: 50%;
+  background: lightcoral;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: auto;
+}
+
+.container2 li a {
+  display: block;
+  color: white;
+  font-weight: 200;
+  font-size: large;
+  font-family: "Josefin Sans",sans-serif;
+  text-decoration: none;
+  margin-top:1rem;
+  margin-left: 2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.container2{
+  position: fixed;
+  background: black;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  clip-path: circle(100px at 100% -15%);
+  -webkit-clip-path:circle(100px at 100% -15%);
+  transition: all 1s ease-out;
+}
+
+.container2.open{
+  clip-path: circle(1100px at 90% -15%);
+  -webkit-clip-path:circle(1100px at 90% -15%);
+}
+
+.toggle{
+  z-index: 2;
+  cursor: pointer;
+}
+
+.container2 li{
+  opacity: 0;
+}
+
+.container2 li a {
+  font-size: 1.5rem ;
+}
+
+.container2 li:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+}
+
+.container2 li:nth-child(2){
+  transition: all 0.5s ease 0.3s;
+}
+
+.container2 li:nth-child(3){
+  transition: all 0.5s ease 0.4s;
+}
+
+.container2 li:nth-child(4){
+  transition: all 0.5s ease 0.5s;
+}
+
+.container2 li:nth-child(5){
+  transition: all 0.5s ease 0.6s;
+}
+
+li.fade {
+  opacity: 1;
+}
+
+.card-container-m.close{
+  display: none;
 }
