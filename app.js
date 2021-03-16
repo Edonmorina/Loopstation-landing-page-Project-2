@@ -28,11 +28,7 @@ toggle.addEventListener('click' , () => {
   
 })
 
-window.addEventListener("touchstart", function(toggle){
-    if(toggle.target.tagName=="HTML" || toggle.target.tagName=="BODY"){
-            toggle.preventDefault();
-    }
-} ,false);
+
 
 
 

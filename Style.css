@@ -524,46 +524,46 @@ input,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.25rem;
+  width: 4rem;
   height: 0.5rem;
   cursor: pointer;
   transition: all .5s ease-in-out;
   /* border: 3px solid #fff; */
 }
 .menu-btn__burger {
-  width: 3.55rem;
-  height: 0.225rem;
+  width: 2rem;
+  height: 0.215rem;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 1rem;
   transition: all .5s ease-in-out;
 }
 .menu-btn__burger::before,
 .menu-btn__burger::after {
   content: '';
   position: absolute;
-  width: 3.55rem;
-  height: 0.225rem;
+  width: 2.25rem;
+  height: 0.215rem;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 1rem;
   transition: all .5s ease-in-out;
 }
 .menu-btn__burger::before {
-  transform: translateY(-16px);
+  transform: translateY(-0.75rem);
 }
 .menu-btn__burger::after {
-  transform: translateY(16px);
+  transform: translateY(0.75rem);
 }
 /* ANIMATION */
 .menu-btn.open .menu-btn__burger {
-  transform: translateX(-50px);
+  transform: translateX(-3.125rem);
   background: transparent;
   box-shadow: none;
 }
 .menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(2.188rem, -2.188rem);
 }
 .menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+  transform: rotate(-45deg) translate(2.188rem, 2.188rem);
 }
 
   /*Hamburger Icon END*/
@@ -922,13 +922,9 @@ main.close{
   display: none;
 }
 
-body.close{
-  overflow-y: hidden;
-  overflow-x: hidden;
-  position: relative;
-}
 
-html.close{
-  overflow-x: hidden;
+html.close, body.close {
+  margin: 0;
   height: 100%;
+  overflow: hidden;
 }
