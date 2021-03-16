@@ -924,4 +924,11 @@ main.close{
 
 body.close{
   overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+
+html.close{
+  overflow-x: hidden;
+  height: 100%;
 }
