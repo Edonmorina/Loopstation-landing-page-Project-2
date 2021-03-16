@@ -498,7 +498,7 @@ input,
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   nav ul {
     display: none;
   }
@@ -516,11 +516,60 @@ input,
     display: none;
   }
 
-  nav label {
-    display: block;
-    font-size: 2rem;
-    color: white;
-  }
+
+/*Hamburger Icon Start*/
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.25rem;
+  height: 0.5rem;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.menu-btn__burger {
+  width: 3.55rem;
+  height: 0.225rem;
+  background: #fff;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 3.55rem;
+  height: 0.225rem;
+  background: #fff;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+  /*Hamburger Icon END*/
+    
+
+  
 
   header {
     background-image: url(./images/mobile/image-hero.jpg);
@@ -795,6 +844,7 @@ input,
   justify-content: center;
   align-items: flex-start;
   margin-left: auto;
+
 }
 
 .container2 li a {
@@ -808,6 +858,7 @@ input,
   margin-left: 2rem;
   letter-spacing: 1px;
   cursor: pointer;
+  font-size: 3rem;
 }
 
 .container2{
@@ -816,8 +867,8 @@ input,
   height: 100vh;
   width: 100%;
   flex-direction: column;
-  clip-path: circle(100px at 100% -15%);
-  -webkit-clip-path:circle(100px at 100% -15%);
+  clip-path: circle(100px at 100% -20%);
+  -webkit-clip-path:circle(100px at 100% -20%);
   transition: all 1s ease-out;
 }
 
@@ -833,10 +884,6 @@ input,
 
 .container2 li{
   opacity: 0;
-}
-
-.container2 li a {
-  font-size: 1.5rem ;
 }
 
 .container2 li:nth-child(1){
@@ -865,4 +912,16 @@ li.fade {
 
 .card-container-m.close{
   display: none;
+}
+
+main.close{
+  display: none;
+}
+
+.footer-m.close{
+  display: none;
+}
+
+body.close{
+  overflow-y: hidden;
 }
